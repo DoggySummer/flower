@@ -7,6 +7,7 @@ import styled from 'styled-components';
 import Navbar from './components/Navbar.js';
 import Home from './components/Home.js';
 import About from './components/About';
+import Menu from './components/Menu';
 import ReactDOM from 'react-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Footer from './components/Footer.js';
@@ -22,6 +23,7 @@ function App() {
   <Route path="/" exact={true} component={Home} />
   <Route path="/About" component={About} />
   <Route path="/Contact" component={Contact} />
+  <Route path="/Menu" component={Menu} />
   <Footer />
 </div>
   );
