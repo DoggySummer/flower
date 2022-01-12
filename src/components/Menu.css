@@ -1,5 +1,5 @@
 .background_center{
-    background-color: var(--color-side);
+    background-color: var(--color-center);
     width: var(--width-center);
     height: 1400px;
     margin: var(--margin-center);
