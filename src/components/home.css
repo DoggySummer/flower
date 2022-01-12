@@ -55,11 +55,14 @@
 }
 .card-btn {
   position: relative;
+  display: block;
   border-style: solid;
   border-color: var(--color-word);
   width: 180px;
   height: 50px;
   border-radius: 20px;
+  margin: 0 auto;
+  cursor: pointer;
 }
 .home_card {
   width: 280px;
