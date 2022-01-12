@@ -25,7 +25,7 @@ const About = () => {
                 <img alt='about_image' src='./images/about3.png' width='100%' height='500px'></img>
             </div>
             <div>
-                <StyledH1>Lorem Ipsum</StyledH1>
+                <StyledH1>Lorem Ipsum.</StyledH1>
                 <StyledH2>What is Lorem Ipsum?</StyledH2>
                 <StyledP><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
