@@ -20,7 +20,7 @@ const About = () => {
     `;
 
     return (
-        <div className='background_center'>
+        <div className='about_background_center'>
 					<div className='about_picture'>
               <img alt='about_image' src='./images/about3.png' width='100%' height='500px'></img>
 					</div>
