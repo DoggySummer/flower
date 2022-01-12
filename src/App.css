@@ -17,4 +17,6 @@ html{
   --color-word: #5d2313;
   --color-black: #2a2a2a;
   --color-side: #FAFAEB;
+	--width-center: 1000px;
+	--margin-center: 0 auto;
 }

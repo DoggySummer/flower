@@ -1,6 +1,6 @@
 .about_background_center{
-    background-color: #ffff;
-    width: 1000px;
+		background-color: var(--color-side);
+    width: var(--width-center);
     height: 1170px;
-    margin: 0 auto;
+    margin: var(--margin-center);
 }
