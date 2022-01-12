@@ -47,7 +47,7 @@
   .card_blend {
     position: absolute;
     background-color: var(--color-word);
-    color: var(--color-main);
+    color: white;
     width: 120px;
     height: 30px;
     text-align: center;

@@ -48,7 +48,7 @@ function Navbar(){
             </div>
           </li>
 
-          {/* <li>
+          <li>
             <img src='./images/2.png' />
             <div className='item-info'>
               <div className='innerCart-cancel'>X</div>
@@ -74,7 +74,7 @@ function Navbar(){
             </div>
               <button className='InnerCart-btn'>누르기</button>
             </div>
-          </li> */}
+          </li>
         </ul>
 
     {/* 총액 */}

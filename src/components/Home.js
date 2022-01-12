@@ -1,7 +1,7 @@
 import './Home.css';
 import { Link } from 'react-router-dom';
 
-function Home(){
+function Home(props){
   return(
     <div>
 
@@ -48,11 +48,11 @@ function Home(){
         <img src='./images/testimonial-1.jpg' alt='about_image'></img>
         <img src='./images/testimonial-2.jpg' alt='about_image'></img>
         <img src='./images/testimonial-3.jpg' alt='about_image'></img>
-
-
+      </div>
+      <div className='carousel-ball'>
       </div>
     </div>
   )
-}
+} 
 
 export default Home;

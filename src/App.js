@@ -13,7 +13,9 @@ import Footer from './components/Footer.js';
 import Contact from './components/Contact.js';
 function App() {
 
-  
+  let [carousel, setCarousel] = useState(0);
+
+
   return (
 <div>
   <Navbar />

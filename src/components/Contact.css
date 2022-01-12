@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
 
 .contact_bg {
-  background-image: url("/public/images/teapod.jpg");
+  background-image: url("/public/images/about2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
 .contact_container {
+  padding-left: 50px;
   width: 60vw;
   height: auto;
   margin: 0 auto;
   color: var(--color-word);
-  opacity: 1;
+  background-color: rgba( 255, 255, 255, 0.5 );
 }
 
 .contact_title {
@@ -55,7 +59,8 @@
   color: white;
   width: 48%;
   height: 50px;
-  margin: 20px 0 30px 0;
+  margin-top: 20px;
+  margin-bottom: 40px;
   text-align: center;
   line-height: 50px;
   cursor: pointer;
