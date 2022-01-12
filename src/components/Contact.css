@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
 
-.contact-bg {
-  /* background-image: url("./images/teapod.jpg"); */
+.contact_bg {
+  background-image: url("/public/images/teapod.jpg");
 }
 .contact_container {
   width: 60vw;
