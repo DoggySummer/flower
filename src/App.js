@@ -7,10 +7,10 @@ import styled from 'styled-components';
 import Navbar from './components/Navbar.js';
 import Home from './components/Home.js';
 import About from './components/About';
-import ReactDOM from 'react-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Footer from './components/Footer.js'
-
+import ReactDOM from 'react-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Footer from './components/Footer.js';
+import Contact from './components/Contact.js';
 function App() {
 
   
@@ -19,6 +19,7 @@ function App() {
   <Navbar />
   <Route path="/" exact={true} component={Home} />
   <Route path="/About" component={About} />
+  <Route path="/Contact" component={Contact} />
   <Footer />
 </div>
   );
