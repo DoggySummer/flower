@@ -26,7 +26,7 @@ function Home(){
         <div className='home_card'>
           <div className='card_blend'>classic blends</div>
           <img src='./images/1.png' className='card-img' alt='about_image'></img>
-          <div className='card_title'>Chamomile</div>
+          <div className='card_title'>카모마일</div>
           <button className='card-btn'>add to cart</button>
         </div>
         <div className='home_card'>
