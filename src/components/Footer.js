@@ -44,7 +44,7 @@ function Footer(){
         </div>
       </div>
       <div className='rights'>
-        @2022 by JGW, LSW. All Rights Reserved 
+        @2022 by JGW, JSW. All Rights Reserved 
       </div>
     </div>
   )
