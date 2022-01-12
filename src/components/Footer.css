@@ -1,0 +1,38 @@
+.footer {
+  background-color: var(--color-main);
+  width: 100%;
+  height: 300px;
+  color: white;
+  box-shadow: 30px 0 0 0;
+}
+.footer-container {
+  width: 70%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-content {
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  margin: 20px auto;
+}
+.footer-title {
+  font-weight: bold;
+  border-bottom: white;
+  border-bottom-style: solid;
+  width: 200px;
+  height: auto;
+  padding: 10px 0;
+}
+.footer-link {
+  padding-top: 10px;
+}
+.rights {
+  border-top: white;
+  border-top-style: solid;
+  text-align: center;
+  font-size: 5px;
+  padding: 10px;
+}

@@ -9,7 +9,7 @@ import Home from './components/Home.js';
 import About from './components/About';
 import ReactDOM from 'react-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import Footer from './components/Footer.js'
 
 function App() {
 
@@ -19,6 +19,7 @@ function App() {
   <Navbar />
   <Route path="/" exact={true} component={Home} />
   <Route path="/About" component={About} />
+  <Footer />
 </div>
   );
 }
