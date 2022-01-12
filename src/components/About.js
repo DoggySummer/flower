@@ -4,7 +4,7 @@ import './About.css';
 
 
 const About = () => {
-   const StyledH1 = styled.h1`
+    const StyledH1 = styled.h1`
     text-align: center;
     margin: 10px 0px 20px;
     `;

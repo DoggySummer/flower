@@ -1,12 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  outline: none; border:none;
-  transition: .2s linear;
+  outline: none;
+  border: none;
+  transition: 0.2s linear;
 }
-:root{
-  --color-main: #FFC5C9;
+:root {
+  --color-main: #ffc5c9;
+  --color-word: #5d2313;
 }
