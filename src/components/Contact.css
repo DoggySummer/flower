@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
+
+.contact-bg {
+  /* background-image: url("./images/teapod.jpg"); */
+}
+.contact_container {
+  width: 60vw;
+  height: auto;
+  margin: 0 auto;
+  color: var(--color-word);
+  opacity: 1;
+}
+
+.contact_title {
+  width: 100%;
+  height: 80px;
+  font-weight: 700;
+  font-size: 35px;
+  margin: 40px auto 20px;
+  text-align: center;
+}
+
+.hello {
+  font-family: "Island Moments", cursive;
+  font-weight: 700;
+  font-size: 75px;
+}
+.contact_help {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.contact_info {
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.name {
+  padding: 5px;
+  border-width: 0.6px;
+  border-style: solid;
+  border-color: var(--color-word);
+  margin: 0 20px 20px 0;
+}
+.textarea {
+  width: 48%;
+  height: 160px;
+  padding: 10px;
+  border-width: 0.6px;
+  border-style: solid;
+  border-color: var(--color-word);
+}
+.send {
+  background-color: var(--color-word);
+  color: white;
+  width: 48%;
+  height: 50px;
+  margin: 20px 0 30px 0;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
