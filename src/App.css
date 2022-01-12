@@ -8,6 +8,10 @@
   border: none;
   transition: 0.2s linear;
 }
+html{
+  width: 100vw;
+  height: 100vh;
+}
 :root {
   --color-main: #ffc5c9;
   --color-word: #5d2313;

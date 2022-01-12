@@ -1,18 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
 
-.contact_bg {
+.contact_bg{
   background-image: url("/public/images/about2.png");
   background-repeat: no-repeat;
   background-size: cover;
-  
+  width: 100vw;
+  height: auto;
+  background-attachment: fixed;
 }
 .contact_container {
   padding-left: 50px;
   width: 60vw;
   height: auto;
+  padding-bottom: 30px;
   margin: 0 auto;
   color: var(--color-word);
-  background-color: rgba( 255, 255, 255, 0.5 );
+  background-color: rgba( 255, 255, 255, 0.7 );
 }
 
 .contact_title {
@@ -20,8 +23,9 @@
   height: 80px;
   font-weight: 700;
   font-size: 35px;
-  margin: 40px auto 20px;
+  margin-bottom: 20px;
   text-align: center;
+  line-height: 80px;
 }
 
 .hello {
@@ -60,7 +64,7 @@
   width: 48%;
   height: 50px;
   margin-top: 20px;
-  margin-bottom: 40px;
+  padding-bottom: 20px;
   text-align: center;
   line-height: 50px;
   cursor: pointer;
