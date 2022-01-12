@@ -79,7 +79,7 @@ function Navbar(){
 
     {/* 총액 */}
         <div className='subtotal'>
-          총액
+          총 금액
           <br />
           15000원
         </div>
