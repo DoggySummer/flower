@@ -2,9 +2,8 @@ import './Navbar.css'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faBars } from  "@fortawesome/free-solid-svg-icons";
-import Cart from './Cart.js';
 
-function Navbar(){
+function Navbar(props){
 
 
   return (
@@ -20,7 +19,7 @@ function Navbar(){
           <li><Link to="/Contact">Contact</Link></li>
         </ul>
         <div className='icons'>
-          <button className='icon_1'>
+          <button className='icon_1' onClick={props.cartClick}>
             <FontAwesomeIcon icon={ faShoppingCart } />
           </button>
         </div>

@@ -5,7 +5,8 @@
   width: 300px;
   height: 100vh;
   background-color: white;
-  display: block;
+  right: -300px;
+	
 }
 .cart-header {
   position: relative;

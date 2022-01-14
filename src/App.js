@@ -19,9 +19,20 @@ import Cart from './components/Cart';
 
 function App() {
 
+	const [CartShow, setCartShow] = useState(1);
+	
+	const cartClick = () => {
+			document.querySelector('.cart').style.right = '0px';
+			setCartShow(2);
+		if(CartShow == 2) { 
+			document.querySelector('.cart').style.right = '-300px';
+			setCartShow(1);
+		}
+	}
+
   return (
 <div>
-  <Navbar />
+  <Navbar cartClick={cartClick} />
   <Cart />
   <Route path="/" exact={true} component={Home} />
   <Route path="/About" component={About} />
