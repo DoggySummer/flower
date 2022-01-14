@@ -4,3 +4,29 @@
     height: 1170px;
     margin: var(--margin-center);
 }
+.about_pictures{
+  display: flex;
+  width: 900px;
+  margin: 0 auto;
+  overflow-x: hidden;
+  transition: 1s;
+}
+.img_container{
+  display: flex;
+}
+.img_container first{
+  transform: translateX(0);
+}
+.img_container second{
+  transform: translateX(-900px);
+}
+.img_container third{
+  transform: translateX(-1800px);
+}
+.about_img{
+  width: 900px;
+  height: 500px;
+}
+.front-btn{
+  margin: 30px;
+}

@@ -1,31 +1,58 @@
+.background_img{
+	background-image: url("/public/images/menu-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: auto;
+  background-attachment: fixed;
+}
+
 .background_center{
-    background-color: var(--color-center);
+    background-color: rgba( 255, 255, 255, 0.8 );
     width: var(--width-center);
     height: 1400px;
     margin: var(--margin-center);
 }
 
 .menu_title{
-	margin-top: 20px;
+	padding-top: 20px;
 	text-align: center;
 }
 
 .menu_box{
-	background-color: #fff;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 .menu_item{
+	position: relative;
 	padding: 2rem;
 	text-align: center;
 	cursor: pointer;
 }
 
-.menu_item:hover.menu_item>img{
-	transform: scale(1.2);
+.img_front{
+	position:relative;
+	height: 15rem;
+	width: 100%;
+	z-index: 200;
+	opacity: 1;
 }
+.img_back{
+	position:absolute;
+	top: 32px;
+	left: 32px;
+	width: 15rem;
+	height: 15rem;
+}
+.img_front:hover{
+	opacity: 0;
+}
+
+/* .menu_item:hover.menu_item>img{
+	transform: scale(1.2);
+} */
 
 .menu_item h3{
 	padding: 1rem 0;
@@ -36,10 +63,10 @@
 	padding-bottom: 30px;
 }
 
-.menu_item > img{
+/* .menu_item > img{
 	height: 15rem;
 	width: 100%;
-}
+} */
 
 .AddToCart{
 	height: 30px;

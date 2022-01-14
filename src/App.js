@@ -12,14 +12,17 @@ import ReactDOM from 'react-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Footer from './components/Footer.js';
 import Contact from './components/Contact.js';
+import Cart from './components/Cart';
+
+
+
+
 function App() {
-
-  let [carousel, setCarousel] = useState(0);
-
 
   return (
 <div>
   <Navbar />
+  <Cart />
   <Route path="/" exact={true} component={Home} />
   <Route path="/About" component={About} />
   <Route path="/Contact" component={Contact} />

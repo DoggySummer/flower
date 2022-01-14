@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import './About.css';
 
@@ -19,11 +19,35 @@ const About = () => {
     margin: 10px 0px 40px;
     `;
 
+		const [carousel, setCarousel] = useState(0);
+
+		// function First_btn(){
+		// 	let carousel = 0;
+		// 	return (
+		// 		<div>
+		// 			{
+		// 				{
+		// 					0: <div className={`img_container first`} </div>
+		// 					1: 
+		// 					2: 
+		// 				} [carousel]
+		// 			}
+		// 		</div>
+		// 	)
+		// 		// class about_pictures를 찾아서 transform: translateX(0)해주세요
+		// }
+
     return (
         <div className='about_background_center'>
-					<div className='about_picture'>
-              <img alt='about_image' src='./images/about3.png' width='100%' height='500px'></img>
+					<div className='about_pictures'>
+						<div className='img_container'>
+							<img alt='about_image' src='./images/about-1.jpg' className='about_img'></img>
+							<img alt='about_image' src='./images/about-2.png' className='about_img'></img>
+							<img alt='about_image' src='./images/about-3.jpg' className='about_img'></img>
+						</div>
 					</div>
+					{/* <button onClick={()=> First_btn()} className='front-btn'>ㅇ</button>
+					<button className='back-btn'>ㅇ</button> */}
 					<div>
 							<StyledH1>Lorem Ipsum.</StyledH1>
 							<StyledH2>What is Lorem Ipsum?</StyledH2>
