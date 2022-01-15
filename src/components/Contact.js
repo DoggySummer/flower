@@ -1,7 +1,7 @@
 import './Contact.css';
 
 
-function Contact(){
+const Contact = () => {
   return(
     <div className='contact_bg'>
       <div className='contact_container'>

@@ -1,9 +1,26 @@
+.home_background_img{
+	background-image: url("/public/images/back_image.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  background-attachment: fixed;
+}
+
+.home_background_center{
+	background-color: var(--color-center);
+	width: var(--width-center);
+	height: 1670px;
+	margin: var(--margin-center);
+}
+
 .free-shipping {
-    width: 100vw;
-    height: 50px;
-    background-color: var(--color-main);
+    width: 850px;
+    height: 40px;
+    /* background-color: var(--color-main); */
     color: var(--color-word);
     font-size: 25px;
+		margin: 0 auto;
   }
   
   .wording {

@@ -1,15 +1,15 @@
 import './Home.css';
 import { Link } from 'react-router-dom';
 
-function Home(props){
+const Home = () => {
   return(
-    <div>
-
+	<div className='home_background_img'>
+    <div className='home_background_center'>
       {/* 시작 이미지 */}
       <div className='wording'>
-        <div className='free-shipping'>
+        <h1 className='free-shipping'>
           Now Shipping Globally!
-        </div>
+        </h1>
         <img className="background" alt='bg-img' src="./images/teapod.jpg"></img>
         <Link to="/"><div className='background-btn'>Shop Now</div></Link>
       </div>
@@ -52,6 +52,7 @@ function Home(props){
       <div className='carousel-ball'>
       </div>
     </div>
+	</div>	
   )
 } 
 

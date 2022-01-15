@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faBars } from  "@fortawesome/free-solid-svg-icons";
 
-function Navbar(props){
+const Navbar = (props) => {
 
 
   return (
     <div>
       <header className='header'> 
         <div className='logo'>
-          <img src='./images/SOF-logo.png' />
+					<Link to="/" className='LinkHome'><img src='./images/SOF-logo.png' /></Link>
         </div>
         <ul>
           <li><Link to="/">Home</Link></li>

@@ -11,10 +11,9 @@
 }
 .contact_container {
   padding-left: 50px;
-  width: 60vw;
-  height: auto;
   padding-bottom: 30px;
-  margin: 0 auto;
+  width: var(--width-center);
+  margin: var(--margin-center);
   color: var(--color-word);
   background-color: var(--color-center);
 }

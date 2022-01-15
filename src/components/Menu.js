@@ -4,7 +4,7 @@ import './Menu.css';
 const Menu = () => {
     return (
 			<div className='background_img'>
-				<div className='background_center'>
+				<div className='menu_background_center'>
 					<h1 className='menu_title'>SHOP SINGAPORE'S FINEST TEA SELECTIONS</h1>
 					<div className='menu_box'>
 						<div className='menu_item'>

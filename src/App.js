@@ -17,7 +17,7 @@ import Cart from './components/Cart';
 
 
 
-function App() {
+const App = () => {
 
 	const [CartShow, setCartShow] = useState(1);
 	
