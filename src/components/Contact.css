@@ -69,3 +69,26 @@
   line-height: 50px;
   cursor: pointer;
 }
+
+@media (max-width:1000px) {
+  .hello{
+    text-align: center;
+  }
+  .contact_help{
+    text-align: center;
+  }
+  .contact_info{
+    text-align: center;
+  }
+  .contact_input{
+    text-align: center;
+  }
+  .textarea{
+    margin:auto;
+  }
+  .send{
+    display: block;
+    align-items: center;
+    margin: 20px 0 10px 0;
+  }
+}

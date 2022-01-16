@@ -1,8 +1,9 @@
 import './Home.css';
 import { Link } from 'react-router-dom';
-
 const Home = () => {
+  
   return(
+    
 	<div className='home_background_img'>
     <div className='home_background_center'>
       {/* 시작 이미지 */}
@@ -36,7 +37,7 @@ const Home = () => {
           <button className='card-btn'>add to cart</button>
         </div>
         <div className='home_card'>
-          <div className='card_blend'>classic blends</div>
+          <div className='card_blend'>classic blend</div>
           <img src='./images/3.png' className='card-img' alt='about_image'></img>
           <div className='card_title'>Earl Grey</div>
           <button className='card-btn'>add to cart</button>
