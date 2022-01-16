@@ -13,62 +13,6 @@ const Menu = () => {
 							<h3>first product</h3>	
 							<div className='AddToCart'>Add to Cart</div>  
 						</div>
-{/* 
-						<div className='menu_item'>
-							<img src='./images/2.png'></img>
-							<h3>second product</h3>	
-							<div className='price'>$21.00</div>	
-							<div className='AddToCart'>Add to Cart</div>  
-						</div>
-
-						<div className='menu_item'>
-							<img src='./images/3.png'></img>
-							<h3>third product</h3>	
-							<div className='price'>$21.00</div>	
-							<div className='AddToCart'>Add to Cart</div>  
-						</div>
-
-						<div className='menu_item'>
-							<img src='./images/4.png'></img>
-							<h3>fourth product</h3>	
-							<div className='price'>$21.00</div>	
-							<div className='AddToCart'>Add to Cart</div>  
-						</div>
-
-						<div className='menu_item'>
-							<img src='./images/5.png'></img>
-							<h3>fifth product</h3>	
-							<div className='price'>$21.00</div>	
-							<div className='AddToCart'>Add to Cart</div>  
-						</div>
-
-						<div className='menu_item'>
-							<img src='./images/6.png'></img>
-							<h3>sixth product</h3>	
-							<div className='price'>$21.00</div>	
-							<div className='AddToCart'>Add to Cart</div>  
-						</div>
-
-						<div className='menu_item'>
-							<img src='./images/7.png'></img>
-							<h3>seventh product</h3>	
-							<div className='price'>$21.00</div>	
-							<div className='AddToCart'>Add to Cart</div>  
-						</div>
-						
-						<div className='menu_item'>
-							<img src='./images/8.png'></img>
-							<h3>eighth product</h3>	
-							<div className='price'>$21.00</div>	
-							<div className='AddToCart'>Add to Cart</div>  
-						</div>
-
-						<div className='menu_item'>
-							<img src='./images/1.png'></img>
-							<h3>ninth product</h3>	
-							<div className='price'>$21.00</div>	
-							<div className='AddToCart'>Add to Cart</div>  
-						</div> */}
 					</div>
 				</div>
 			</div>
