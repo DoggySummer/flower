@@ -5,7 +5,7 @@ const Footer = () => {
     <div className='footer'>
       <div className='footer-container'>
         {/* support */}
-        <div className='footer-content'>
+        <div className='footer-content support'>
           <div className='footer-title'>
             Support
           </div>

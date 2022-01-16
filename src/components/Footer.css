@@ -36,3 +36,21 @@
   font-size: 5px;
   padding: 10px;
 }
+
+@media (max-width:880px) {
+	.footer{
+		height: 470px;
+	}
+	.footer-content {
+		height: 160px;
+		margin: 0 auto;
+		
+	}
+	.support{
+		height: 100px;
+	}
+	.footer-container {
+		display: block;
+	}
+
+}
