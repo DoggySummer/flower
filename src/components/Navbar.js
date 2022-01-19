@@ -20,7 +20,8 @@ const Navbar = (props) => {
         </ul>
         <div className='icons'>
           <button className='icon_1' onClick={props.cartClick}>
-            <FontAwesomeIcon icon={ faShoppingCart } />
+            <FontAwesomeIcon icon={ faShoppingCart } className='cart_icon'/>
+            <FontAwesomeIcon icon={ faBars } className='bar_icon'/>
           </button>
         </div>
       </header>
