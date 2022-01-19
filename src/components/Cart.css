@@ -6,7 +6,7 @@
   height: 100vh;
   background-color: white;
   right: -300px;
-	
+	z-index: 999;
 }
 .cart-header {
   position: relative;

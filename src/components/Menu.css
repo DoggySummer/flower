@@ -70,8 +70,14 @@
 } */
 
 .AddToCart{
-	height: 30px;
-	border: 1px solid black;
-	border-radius: 15%;
-	background-color: rgba(255, 224, 227, 0.36);
+	position: relative;
+  display: block;
+  border-style: solid;
+  border-color: var(--color-word);
+  width: 140px;
+  height: 40px;
+  border-radius: 20px;
+  margin: 0 auto;
+  cursor: pointer;
+	line-height: 40px;
 }
