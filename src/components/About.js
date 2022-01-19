@@ -39,6 +39,7 @@ const About = () => {
 
     return (
         <div className='about_background_center'>
+					<div className="about_container">
 					<div className='about_pictures'>
 						<div className='img_container'>
 							<img alt='about_image' src='./images/about-1.jpg' className='about_img'></img>
@@ -48,7 +49,8 @@ const About = () => {
 					</div>
 					{/* <button onClick={()=> First_btn()} className='front-btn'>ㅇ</button>
 					<button className='back-btn'>ㅇ</button> */}
-					<div>
+					<div className="about_content">
+						<div>
 							<StyledH1>Lorem Ipsum.</StyledH1>
 							<StyledH2>What is Lorem Ipsum?</StyledH2>
 							<StyledP><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. 
@@ -74,6 +76,8 @@ const About = () => {
 								All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. 
 								It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. 
 								The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</StyledP>
+					</div>
+					</div>
 					</div>
         </div>
     );
