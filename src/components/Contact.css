@@ -1,19 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Island+Moments&display=swap");
 
-
-.contact_bg{
+.contact_bg {
   background-image: url("/public/images/contact-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: auto;
   background-attachment: fixed;
 }
 .contact_container {
-  padding-left: 50px;
+  padding-left: 4em;
+  padding-right: 2em;
   padding-bottom: 30px;
-  width: var(--width-center);
-  margin: var(--margin-center);
+  width: 80%;
+  margin: 0 auto;
   color: var(--color-word);
   background-color: var(--color-center);
 }
@@ -51,7 +51,7 @@
   margin: 0 20px 20px 0;
 }
 .textarea {
-  width: 48%;
+  width: 366px;
   height: 160px;
   padding: 10px;
   border-width: 0.6px;
@@ -69,26 +69,38 @@
   line-height: 50px;
   cursor: pointer;
 }
-
-@media (max-width:1000px) {
-  .hello{
+/* 
+@media (max-width: 1000px) {
+  .hello {
     text-align: center;
   }
-  .contact_help{
+  .contact_help {
     text-align: center;
   }
-  .contact_info{
+  .contact_info {
     text-align: center;
   }
-  .contact_input{
+  .contact_input {
     text-align: center;
   }
-  .textarea{
-    margin:auto;
+  .textarea {
+    margin: auto;
   }
-  .send{
+  .send {
     display: block;
     align-items: center;
     margin: 20px 0 10px 0;
+  }
+} */
+@media (max-width: 580px) {
+  .name {
+    width: 80%;
+  }
+  .textarea {
+    width: 80%;
+  }
+  .contact_container {
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }
