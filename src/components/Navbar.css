@@ -11,10 +11,10 @@
 }
 
 .logo {
-  padding-left: 150px;
+  padding-left: 120px;
 }
 .logo > .LinkHome > img {
-  width: 100px;
+  width: 150px;
   height: 100px;
 }
 
@@ -27,7 +27,7 @@
 .header li {
   cursor: pointer;
   position: relative;
-  padding: 0 30px;
+  padding: 0 40px;
 }
 .header ul > li > a:hover {
   color: var(--color-main);
@@ -39,7 +39,7 @@
   width: 120px;
   display: flex;
   justify-content: center;
-  margin-right: 150px;
+  margin-right: 120px;
 }
 .icon_1 {
   padding: 0 0 0 5px;
@@ -51,5 +51,24 @@
   width: 100%;
   height: 100px;
 }
-@media (max-width: 580px) {
+@media (max-width: 1000px) {
+	.header{
+		flex-direction: column;
+		height: 330px;
+	}
+	.header > ul{
+		flex-direction: column;
+	}
+	.header > ul > li{
+		padding: 0px 0px 10px 0px;
+	}
+	.logo{
+		padding-left: 0px;
+	}
+	.icons{
+		margin: 10px 15px 12px 0px;
+	}
+	.empty{
+		height: 330px;
+	}
 }
