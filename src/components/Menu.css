@@ -2,15 +2,14 @@
   background-image: url("/public/images/menu-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 80%;
+  width: 100%;
   height: auto;
-  margin: var(--margin-center);
   background-attachment: fixed;
 }
 
 .menu_background_center {
   background-color: rgba(255, 255, 255, 0.8);
-  width: 100%;
+  width: 80%;
   height: auto;
   margin: var(--margin-center);
 }

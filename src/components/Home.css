@@ -7,10 +7,6 @@
 }
 
 .home_container {
-<<<<<<< Updated upstream
-=======
-  /* height: 1280px; */
->>>>>>> Stashed changes
   margin: var(--margin-center);
 }
 
@@ -93,17 +89,10 @@
 .card-def h1 {
   margin: 10px auto;
 }
-<<<<<<< Updated upstream
 .testimonial_view {
   width: 100%;
   padding: 30px 0px;
 }
-=======
-.testimonial {
-  padding: 30px 0px;
-  width: 100%;
-} 
->>>>>>> Stashed changes
 .testimonial img {
   width: 100%;
   height: 40%;
@@ -116,17 +105,13 @@
   }
   .home_card {
     margin: 20px 0px;
-    width: 60%;
+    width: 45%;
   }
   .card_title {
     font-size: 1.7em;
   }
   .card-btn {
-    width: 30%;
+    width: 40%;
     font-size: 16px;
   }
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes
