@@ -72,7 +72,7 @@
     margin-right: 10px;
   }
 }
-@media (max-width : 800px) { 
+@media (max-width : 900px) { 
   .icon_2 {
     display: block;
   }
@@ -87,7 +87,7 @@
     padding-left: 30px;
   }
 }
-@media (min-width : 801px) {
+@media (min-width : 901px) {
   
   .header > ul {
     display: block;
@@ -95,7 +95,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 	.header{
     position: relative;
 		flex-direction: column;
