@@ -11,6 +11,7 @@ const Cart = () => {
             {/* 담은 메뉴 map 함수로 정렬 */}
 					</div>
 				</div>
+				<img src='`./images/` + `3` +`.png`'></img>
 			</div>
     );
 };
