@@ -94,12 +94,24 @@
   margin: 10px auto;
 }
 .testimonial {
+  padding-bottom: 30px;
+  border: solid aqua;
   width: 70%;
   height: 30%;
-  overflow-x: hidden;
   display: flex;
+  border: solid magenta;
   margin: 3em auto 0 auto;
-  padding-bottom: 30px;
+  position: relative;
+  transform: translateX(-100%);
+}
+.testimonial_view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: solid darkred;
+  overflow-x: hidden;
 }
 .testimonial img {
   width: 100%;
