@@ -45,7 +45,6 @@ const Home = () => {
       {/* 리뷰 */}
       <div className='testimonial'>
           <img src='./images/testimonial-2.jpg' alt='about_image'></img>
-          <div className='testimonial_view'></div>
       </div>
       <div className='carousel-ball'>
       </div>

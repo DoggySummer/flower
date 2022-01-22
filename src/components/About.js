@@ -21,34 +21,12 @@ const About = () => {
 
 		const [carousel, setCarousel] = useState(0);
 
-		// function First_btn(){
-		// 	let carousel = 0;
-		// 	return (
-		// 		<div>
-		// 			{
-		// 				{
-		// 					0: <div className={`img_container first`} </div>
-		// 					1: 
-		// 					2: 
-		// 				} [carousel]
-		// 			}
-		// 		</div>
-		// 	)
-		// 		// class about_pictures를 찾아서 transform: translateX(0)해주세요
-		// }
-
     return (
         <div className='about_background_center'>
 					<div className="about_container">
 					<div className='about_pictures'>
-						<div className='img_container'>
 							<img alt='about_image' src='./images/about-1.jpg' className='about_img'></img>
-							<img alt='about_image' src='./images/about-2.png' className='about_img'></img>
-							<img alt='about_image' src='./images/about-3.jpg' className='about_img'></img>
-						</div>
 					</div>
-					{/* <button onClick={()=> First_btn()} className='front-btn'>ㅇ</button>
-					<button className='back-btn'>ㅇ</button> */}
 					<div className="about_content">
 						<div>
 							<StyledH1>Lorem Ipsum.</StyledH1>

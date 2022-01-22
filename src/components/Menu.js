@@ -13,14 +13,13 @@ const Menu = (props) => {
 					<h1 className='menu_title'>SHOP SINGAPORE'S FINEST TEA SELECTIONS</h1>
 					<button onClick={()=> props.dispatch({type: 'add_1'})}> + </button>
 					<div className='menu_box'>
-				<img src={props.state[0].Image}></img>
 
 			{props.state.map(function(a, i ){
 			return (
 			<div className='menu_item' key="{ i }">
 				<div className='menu_img'>
-					<img src='./images/1.png' className='img_front'></img>
-					<img src='./images/5.png' className='img_back'></img>
+					<img src={props.state[i].front_Image} className='img_front'></img>
+					<img src={props.state[i].back_Image} className='img_back'></img>
 				</div>
 				<div className='meu_description'>
 					<h3>{ a.name }</h3>	

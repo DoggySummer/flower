@@ -34,6 +34,7 @@
   width: 25%;
   padding-bottom: 2rem;
   padding-top: 0;
+	margin-bottom: 25px;
 }
 
 .cart_img{
@@ -51,7 +52,7 @@
   position: absolute;
   left: 2rem;
   width: calc(100% - 4rem);
-  height: calc(68%);
+  height: calc(65%);
 }
 .img_front:hover {
   opacity: 0;

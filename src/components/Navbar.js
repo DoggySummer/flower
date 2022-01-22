@@ -8,7 +8,7 @@ import { useState } from 'react';
 const Navbar = (props) => {
 
   const menuToggle = () => {
-    document.querySelector('.header').style.height = '250px';
+    document.querySelector('.header').style.height = '265px';
     document.querySelector('.header > ul').style.display = 'block';
     setUlAppear(2);
     
