@@ -90,8 +90,8 @@
   line-height: 40px;
   background-color: #fff;
 }
-.AddToCart:hover {
-  background-color: var(—color-word);
+.AddToCart:hover :focus {
+  background-color: var(--color-word);
   color: white;
 }
 

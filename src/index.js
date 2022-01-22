@@ -7,7 +7,7 @@ import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 
 let defaultItems = [
-  {id : 0, name : '몬트리얼', quan : 0, price : 5500},
+  {id : 0, name : '몬트리얼', quan : 0, price : 5500, Image : "./public/images/blog-1.jpeg"},
   {id : 1, name : '얼그레이', quan : 0, price : 5000},
   {id : 2, name : '로즈마리', quan : 0, price : 4500},
   {id : 3, name : '루이보스', quan : 0, price : 3500},
@@ -27,6 +27,7 @@ function reducer(state = defaultItems, action){
   if (action.type === 'add_1') {
     let copy = [...state];
     copy[0].quan++;
+    alert("장바구니에 추가되었습니다");
     return copy
   } 
 
