@@ -13,9 +13,9 @@ const Menu = (props) => {
 					<h1 className='menu_title'>SHOP SINGAPORE'S FINEST TEA SELECTIONS</h1>
 					<button onClick={()=> props.dispatch({type: 'add_1'})}> + </button>
 					<div className='menu_box'>
-				{console.log(props.state[0].quan)}
+				{console.log(props.state[0].name)}
 
-			{tea.map(function(a, i ){
+			{props.state.map(function(a, i ){
 			return (
 			<div className='menu_item' key="{ i }">
 				<div className='menu_img'>
@@ -23,8 +23,7 @@ const Menu = (props) => {
 					<img src='./images/5.png' className='img_back'></img>
 				</div>
 				<div className='meu_description'>
-					<h3>{ a }</h3>	
-					<h3> { props.state[0].quan }</h3>
+					<h3>{ a.name }</h3>	
 					<div className='AddToCart'>Add to Cart</div> 
 				</div>
 			</div>)
