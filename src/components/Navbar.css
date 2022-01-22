@@ -62,35 +62,8 @@
 .cart_icon{
   margin-right: 10px;
 }
-@media (max-width : 1000px) {
-  .header {
-    justify-content: space-between;
-  }
-  
-  
-  .mediaMenu{
-    margin-right: 10px;
-  }
-}
-@media (max-width : 900px) { 
-  .icon_2 {
-    display: block;
-  }
+@media (min-width: 901px) {
   .header > ul {
-    display: none;
-  }
-  .icon_cart {
-    float: left;
-    margin: 0px;
-  }
-  .logo {
-    padding-left: 30px;
-  }
-}
-@media (min-width : 901px) {
-  
-  .header > ul {
-    display: block;
     display: flex;
   }
 }
@@ -100,24 +73,33 @@
     position: relative;
 		flex-direction: column;
 	}
+  .logo{
+    position: absolute;
+    left: 20px;
+    padding-left: 20px;
+  }
 	.header > ul{
 		flex-direction: column;
     position: absolute;
     top: 110px;
+    display: none;
 	}
 	.header > ul > li{
 		padding: 0px 0px 10px 0px;
-	}
-	.logo{
-		position: absolute;
-    left: 20px;
 	}
 	.icons{
     position: absolute;
     top: 30px;
     right: 10px;
 	}
-	.empty{
-		display: none;
-	}
+  .icon_2 {
+    display: block;
+  }
+  .icon_cart {
+    float: left;
+    margin: 0px;
+  }
+  .empty{
+    display: none;
+  }
 }

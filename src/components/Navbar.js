@@ -10,8 +10,8 @@ const Navbar = (props) => {
   const menuToggle = () => {
     document.querySelector('.header').style.height = '250px';
     document.querySelector('.header > ul').style.display = 'block';
-    
     setUlAppear(2);
+    
     if(ulAppear == 2){
       document.querySelector('.header').style.height = '100px';
       document.querySelector('.header > ul').style.display = 'none';
