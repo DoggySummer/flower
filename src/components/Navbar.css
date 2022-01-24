@@ -64,7 +64,6 @@
 }
 @media (min-width: 901px) {
   .header > ul {
-    display: flex;
   }
 }
 
