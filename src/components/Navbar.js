@@ -6,16 +6,23 @@ import {faAlignJustify} from  "@fortawesome/free-solid-svg-icons";
 import { useState } from 'react';
 
 const Navbar = (props) => {
-
+  {console.log(window.outerWidth)}
   const menuToggle = () => {
+    if(ulAppear == 1){
     document.querySelector('.header').style.height = '265px';
     document.querySelector('.header > ul').style.display = 'block';
     setUlAppear(2);
-    
-    if(ulAppear == 2){
+    }
+    else if(ulAppear == 2){
       document.querySelector('.header').style.height = '100px';
       document.querySelector('.header > ul').style.display = 'none';
       setUlAppear(1);
+    }
+
+    if (window.matchMedia("max-width:901px")) {
+      console.log('big');
+    } else {
+      console.log('small');
     }
   }
   const [ulAppear,setUlAppear] = useState(1);
@@ -44,7 +51,7 @@ const Navbar = (props) => {
           </button> 
           </div>
       </header>
-       <div className='empty' />
+      <div className='empty' />
     </div>
   )
 }

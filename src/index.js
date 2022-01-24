@@ -30,11 +30,77 @@ function reducer(state = defaultItems, action){
     alert("장바구니에 추가되었습니다");
     return copy
   } 
+  else if (action.type === 'add_2') {
+    let copy = [...state];
+    copy[1].quan++;
+    alert("장바구니에 추가되었습니다");
+    return copy
+  } 
+  else if (action.type === 'add_3') {
+    let copy = [...state];
+    copy[2].quan++;
+    alert("장바구니에 추가되었습니다");
+    return copy
+  } 
+  else if (action.type === 'add_4') {
+    let copy = [...state];
+    copy[3].quan++;
+    alert("장바구니에 추가되었습니다");
+    return copy
+  } 
+  else if (action.type === 'add_5') {
+    let copy = [...state];
+    copy[4].quan++;
+    alert("장바구니에 추가되었습니다");
+    return copy
+  } 
+  else if (action.type === 'add_6') {
+    let copy = [...state];
+    copy[5].quan++;
+    alert("장바구니에 추가되었습니다");
+    return copy
+  } 
+  else if (action.type === 'add_7') {
+    let copy = [...state];
+    copy[6].quan++;
+    alert("장바구니에 추가되었습니다");
+    return copy
+  } 
+  else if (action.type === 'add_8') {
+    let copy = [...state];
+    copy[7].quan++;
+    alert("장바구니에 추가되었습니다");
+    return copy
+  } 
+  else if (action.type === 'add_9') {
+    let copy = [...state];
+    copy[8].quan++;
+    alert("장바구니에 추가되었습니다");
+    return copy
+  } 
+  else if (action.type === 'add_10') {
+    let copy = [...state];
+    copy[9].quan++;
+    alert("장바구니에 추가되었습니다");
+    return copy
+  } 
+  else if (action.type === 'add_11') {
+    let copy = [...state];
+    copy[10].quan++;
+    alert("장바구니에 추가되었습니다");
+    return copy
+  } 
+  else if (action.type === 'add_12') {
+    let copy = [...state];
+    copy[11].quan++;
+    alert("장바구니에 추가되었습니다");
+    return copy
+  } 
 
   // 장바구니 수량 줄이기
   else if (action.type === 'subtract_1'){
   let copy = [...state];
-  copy[0].quan++;
+  copy[0].quan--;
   return copy
   }
   else {
