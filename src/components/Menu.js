@@ -1,11 +1,9 @@
 import { React, useState } from 'react';
 import './Menu.css';
-import data from './data/data.json';
 import {connect} from 'react-redux';
 
 
 const Menu = (props) => {
-	let [tea, setTea] = useState(['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12']);
 	
 		return (
 			<div className='background_img'>
@@ -14,16 +12,16 @@ const Menu = (props) => {
 					<button onClick={()=> props.dispatch({type: 'add_1'})}> + </button>
 					<div className='menu_box'>
 
-			{props.state.map(function(a, i ){
+			{props.state.map(function(a,i){
 			return (
-			<div className='menu_item' key="{ i }">
+			<div className='menu_item' key="{i}">
 				<div className='menu_img'>
 					<img src={props.state[i].front_Image} className='img_front'></img>
 					<img src={props.state[i].back_Image} className='img_back'></img>
 				</div>
-				<div className='meu_description'>
+				<div className='menu_description'>
 					<h3>{ a.name }</h3>	
-					<div className='AddToCart'>Add to Cart</div> 
+					<div className='AddToCart' onClick={()=>props.dispatch({type:'add_1'})}>Add to Cart</div> 
 				</div>
 			</div>)
 			})}

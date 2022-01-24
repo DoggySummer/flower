@@ -34,7 +34,7 @@
   width: 25%;
   padding-bottom: 2rem;
   padding-top: 0;
-	margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .menu_img {
@@ -51,14 +51,14 @@
 .img_back {
   position: absolute;
   left: 2rem;
-  width: calc(100% - 4rem); 
+  width: calc(100% - 4rem);
   height: calc(65%);
 }
 .img_front:hover {
   opacity: 0;
 }
 
-.meu_description {
+.menu_description {
   width: 100%;
   height: calc(25% + 2rem);
 }
