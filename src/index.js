@@ -99,13 +99,18 @@ function reducer(state = defaultItems, action){
 
   // 장바구니 수량 줄이기
   else if (action.type === 'subtract_1'){
-  let copy = [...state];
-  copy[0].quan--;
-  return copy
-  }
-  else {
-    return state
-  }
+    let copy = [...state];
+    copy[0].quan--;
+    return copy
+    }
+  else if (action.type === 'subtract_2'){
+    let copy = [...state];
+    copy[1].quan--;
+    return copy
+    }
+    else {
+      return state
+    }
 }
 
 let store = createStore(reducer);
