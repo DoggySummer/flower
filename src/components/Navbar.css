@@ -8,6 +8,7 @@ header {
   position: fixed;
   z-index: 999;
   background-color: #fff;
+  top: 0px;
 }
 .logo {
   padding-left: 120px;
@@ -121,6 +122,9 @@ header ul > li > a:hover {
     list-style: none;
     justify-content: space-between;
     font-size: 20px;
+  }
+  .header_close{
+    top: 0px;
   }
   .ul_close{
     display: none;
