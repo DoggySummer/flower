@@ -27,10 +27,17 @@ function reducer(state = defaultItems, action){
 
   // 장바구니 수량 늘리기
   if (action.type === 'add_0') {
+    if (onCart.id==0 ){
+      console('no');
+      return onCart[0].quan++
+    }
+    else {
     let copy = [...state];
     copy[0].quan++;
-
-    return copy
+    onCart.push(defaultItems[0]);
+    alert(onCart);
+    console.log(onCart);
+    return copy}
   } 
   else if (action.type === 'add_1') {
     let copy = [...state];
