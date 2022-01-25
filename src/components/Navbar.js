@@ -11,11 +11,13 @@ const Navbar = (props) => {
     if(ulAppear == 1){
       document.querySelector('header').className = 'header_open';
       document.querySelector('ul').className = 'ul_open';
+      document.querySelector('#empty').className = 'empty_open';
 			setUlAppear(2);
 		}
 		if(ulAppear == 2){
       document.querySelector('header').className = 'header_close';
       document.querySelector('ul').className = 'ul_close';
+      document.querySelector('#empty').className = 'empty_close';
 			setUlAppear(1);
 		}
   }
@@ -46,7 +48,7 @@ const Navbar = (props) => {
           </button> 
           </div>
       </header>
-      <div className='empty' />
+      <div id='empty' className='empty' />
     </div>
   )
 }

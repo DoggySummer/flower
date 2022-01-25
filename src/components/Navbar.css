@@ -125,6 +125,13 @@ header ul > li > a:hover {
   .ul_close{
     display: none;
   }
+  .empty_open{
+    height: 270px;
+  }
+  .empty_close{
+    height: 100px;
+  }
+  
 }
 
 
