@@ -9,7 +9,6 @@ const Menu = (props) => {
 			<div className='background_img'>
 				<div className='menu_background_center'>
 					<h1 className='menu_title'>SHOP SINGAPORE'S FINEST TEA SELECTIONS</h1>
-					<button onClick={()=> props.dispatch({type: 'add_1'})}> + </button>
 					<div className='menu_box'>
 
 			{props.state.map(function(a,i){
@@ -21,11 +20,10 @@ const Menu = (props) => {
 				</div>
 				<div className='menu_description'>
 					<h3>{a.name}</h3>	
-					<div className='AddToCart' onClick={()=>props.dispatch({type: 'add_1'})}>Add to Cart</div> 
+					<div className='AddToCart' onClick={()=>props.dispatch({type: `add_`+i})}>Add to Cart</div> 
 				</div>
 			</div>)
 			})}
-
 					</div>
 				</div>
 			</div>
