@@ -7,7 +7,7 @@ const Home = () => {
 	<div className='home'>
     <div className='home_container'>
 
-      {/* 시작 이미지 */}
+      {/* 시작 이미지11 */}
       <div className='home_main'>
         <img className="background-img" alt='bg-img' src="./images/teapod.jpg"></img>
         <Link to="/"><div className='background-btn'>Shop Now</div></Link>

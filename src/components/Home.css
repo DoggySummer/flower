@@ -101,6 +101,8 @@
   width: 100%;
   height: 40%;
 }
+
+/* 줄였을때 */
 @media (max-width: 1300px) {
   .home_card{
     width: 100%;
