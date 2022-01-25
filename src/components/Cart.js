@@ -15,7 +15,7 @@ const Cart = (props) => {
 							<th>이미지</th>
 							<th>상품정보</th>
 							<th>수량</th>
-							<th>금액</th>
+							<th>총 금액</th>
 							<th>취소</th>
 						</tr>
 
@@ -23,19 +23,25 @@ const Cart = (props) => {
 							<td><img src={props.state[0].front_Image} className='aaa'></img></td>
 							<td>{props.state[0].name}</td>
 							<td>{props.state[0].quan}</td>
-							<td>{props.state[0].price}</td>
-							<td><button>취소</button></td>
+							<td>{props.state[0].price*props.state[0].quan}</td>
+							<td>
+								<button className='cart_increase' onClick={()=>props.dispatch({type:'add_1'})}>+</button>
+								<button className='cart_decrease'onClick={()=>props.dispatch({type:'subtract_1'})}>-</button>
+							</td>
 						</tr>
 
 						<tr>
 							<td><img src={props.state[1].front_Image} className='aaa'></img></td>
 							<td>{props.state[1].name}</td>
 							<td>{props.state[1].quan}</td>
-							<td>{props.state[1].price}</td>
-							<td><button>취소</button></td>
+							<td>{props.state[1].price*props.state[1].quan}</td>
+							<td>
+								<button className='cart_increase' onClick={()=>props.dispatch({type:'add_2'})}>+</button>
+								<button className='cart_decrease' onClick={()=>props.dispatch({type:'subtract_2'})}>-</button>
+							</td>
 						</tr>
 					</table>
-
+					<div className='total'>총 금액은 {props.state[0].price*props.state[0].quan + props.state[1].price*props.state[1].quan}입니다</div>
 				</div>
 			</div>
 		</div>

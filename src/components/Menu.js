@@ -20,8 +20,8 @@ const Menu = (props) => {
 					<img src={props.state[i].back_Image} className='img_back'></img>
 				</div>
 				<div className='menu_description'>
-					<h3>{ a.name }</h3>	
-					<div className='AddToCart' onClick={()=>props.dispatch({type:'add_1'})}>Add to Cart</div> 
+					<h3>{a.name}</h3>	
+					<div className='AddToCart' onClick={()=>props.dispatch({type: 'add_1'})}>Add to Cart</div> 
 				</div>
 			</div>)
 			})}
