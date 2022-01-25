@@ -108,13 +108,14 @@ function reducer(state = defaultItems, action){
   // 장바구니 수량 줄이기
   else if (action.type === 'subtract_1'){
 
-    if (state[0].quan<1){
+    if (state[0].quan>0){
       alert('목록에서 제거하였습니다')
-    }
-    else {
       let copy = [...state];
       copy[0].quan--;
       return copy
+    }
+    else {
+      return [...state[0].quan]
     }
       
 
