@@ -103,7 +103,7 @@
 }
 
 /* 줄였을때 */
-@media (max-width: 1300px) {
+@media (max-width: 800px) {
   .home_card{
     width: 100%;
     margin-top: 4rem;
