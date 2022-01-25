@@ -21,6 +21,8 @@ let defaultItems = [
   {id : 11, name : '그레이프푸르츠', quan : 0, price : 3000, front_Image : "/images/blog-1.jpeg", back_Image : "/images/1.png"}
 ]
 
+let onCart = []
+
 function reducer(state = defaultItems, action){
 
   // 장바구니 수량 늘리기

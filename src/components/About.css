@@ -1,7 +1,7 @@
 .about_background_center {
   background-color: var(--color-center);
   width: 80%;
-  height: auto;
+  height: 100%;
   margin: var(--margin-center);
 }
 .about_pictures {
