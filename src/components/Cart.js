@@ -25,8 +25,8 @@ const Cart = (props) => {
 							<td>{props.state[0].quan}</td>
 							<td>{props.state[0].price*props.state[0].quan}</td>
 							<td>
-								<button className='cart_increase' onClick={()=>props.dispatch({type:'add_1'})}>+</button>
-								<button className='cart_decrease'onClick={()=>props.dispatch({type:'subtract_1'})}>-</button>
+								<button className='cart_increase' onClick={()=>props.dispatch({type:'add_0'})}>+</button>
+								<button className='cart_decrease'onClick={()=>props.dispatch({type:'subtract_0'})}>-</button>
 							</td>
 						</tr>
 
@@ -36,8 +36,8 @@ const Cart = (props) => {
 							<td>{props.state[1].quan}</td>
 							<td>{props.state[1].price*props.state[1].quan}</td>
 							<td>
-								<button className='cart_increase' onClick={()=>props.dispatch({type:'add_2'})}>+</button>
-								<button className='cart_decrease' onClick={()=>props.dispatch({type:'subtract_2'})}>-</button>
+								<button className='cart_increase' onClick={()=>props.dispatch({type:'add_1'})}>+</button>
+								<button className='cart_decrease' onClick={()=>props.dispatch({type:'subtract_1'})}>-</button>
 							</td>
 						</tr>
 					</table>
