@@ -9,24 +9,19 @@ const Navbar = (props) => {
   {console.log(window.outerWidth)}
   const menuToggle = () => {
     if(ulAppear == 1){
-			document.querySelector('.header').style.height = '265px';
-			document.querySelector('.header > ul').style.display = 'block';
-			if (window.matchMedia >'901px') {
-				document.querySelector('.header > ul').style.display = 'flex';
-				document.querySelector('.header').style.height = '100px';
-			}
-			if (window.matchMedia < '900px') {
-				document.querySelector('.header > ul').style.display = 'block';
-				document.querySelector('.header').style.height = '265px';
-			}
+      document.querySelector('header').className = 'header_open';
+      document.querySelector('ul').className = 'ul_open';
 			setUlAppear(2);
 		}
-		else if(ulAppear == 2){
-			document.querySelector('.header').style.height = '100px';
-			document.querySelector('.header > ul').style.display = 'none';
+		if(ulAppear == 2){
+      document.querySelector('header').className = 'header_close';
+      document.querySelector('ul').className = 'ul_close';
 			setUlAppear(1);
 		}
   }
+  
+  
+
   const [ulAppear,setUlAppear] = useState(1);
   return (
     <div>
