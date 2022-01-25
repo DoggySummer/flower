@@ -21,121 +21,34 @@ let defaultItems = [
   {id : 11, name : '그레이프푸르츠', quan : 0, price : 3000, front_Image : "/images/blog-1.jpeg", back_Image : "/images/1.png"}
 ]
 
-let onCart = []
+
 
 function reducer(state = defaultItems, action){
 
   // 장바구니 수량 늘리기
-  if (action.type === 'add_0') {
-    if (onCart.id==0 ){
-      console('no');
-      return onCart[0].quan++
-    }
-    else {
-    let copy = [...state];
-    copy[0].quan++;
-    onCart.push(defaultItems[0]);
-    alert(onCart);
-    console.log(onCart);
-    return copy}
-  } 
-  else if (action.type === 'add_1') {
-    let copy = [...state];
-    copy[1].quan++;
-
-    return copy
-  } 
-  else if (action.type === 'add_2') {
-    let copy = [...state];
-    copy[2].quan++;
-
-    return copy
-  } 
-  else if (action.type === 'add_3') {
-    let copy = [...state];
-    copy[3].quan++;
-
-    return copy
-  } 
-  else if (action.type === 'add_4') {
-    let copy = [...state];
-    copy[4].quan++;
-
-    return copy
-  } 
-  else if (action.type === 'add_5') {
-    let copy = [...state];
-    copy[5].quan++;
-
-    return copy
-  } 
-  else if (action.type === 'add_6') {
-    let copy = [...state];
-    copy[6].quan++;
-
-    return copy
-  } 
-  else if (action.type === 'add_7') {
-    let copy = [...state];
-    copy[7].quan++;
-
-    return copy
-  } 
-  else if (action.type === 'add_8') {
-    let copy = [...state];
-    copy[8].quan++;
-
-    return copy
-  } 
-  else if (action.type === 'add_9') {
-    let copy = [...state];
-    copy[9].quan++;
-
-    return copy
-  } 
-  else if (action.type === 'add_10') {
-    let copy = [...state];
-    copy[10].quan++;
-
-    return copy
-  } 
-  else if (action.type === 'add_11') {
-    let copy = [...state];
-    copy[11].quan++;
-    return copy
-  } 
-
+	console.log(action);
+	if (action.type === "add") {
+    const copy = [...state];
+    copy[action.idx].quan++;
+		console.log(copy);
+		console.log(action.idx)
+		return copy;
+	}
+	else if(action.type === "minus"){
+		const copy = [...state];
+		copy[action.idx].quan--;
+		console.log(copy);
+		console.log(action.idx)
+		return copy;
+	}
+	else{
+		return state;
+	}
+  
   // 장바구니 수량 줄이기
-  else if (action.type === 'subtract_1'){
-
-    if (state[0].quan>0){
-      alert('목록에서 제거하였습니다')
-      let copy = [...state];
-      copy[0].quan--;
-      return copy
-    }
-    else {
-      return [...state[0].quan]
-    }
-      
-
-
-
-    }
-  else if (action.type === 'subtract_2'){
-    let copy = [...state];
-    copy[1].quan--;
-    return copy
-    }
-    else {
-      return state
-    }
 }
 
 let store = createStore(reducer);
-
-
-
 
 ReactDOM.render(
   <React.StrictMode>

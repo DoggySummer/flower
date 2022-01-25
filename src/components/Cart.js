@@ -3,6 +3,16 @@ import './Cart.css';
 import {connect} from 'react-redux';
 
 const Cart = (props) => {
+
+	function addItem(state, idx) {
+		return {
+				type: "add", 
+				payload: state,
+				idx: idx
+		};
+	};
+
+
   
 	return (
 		<div className='background_img'>
@@ -25,8 +35,8 @@ const Cart = (props) => {
 							<td>{props.state[0].quan}</td>
 							<td>{props.state[0].price*props.state[0].quan}</td>
 							<td>
-								<button className='cart_increase' onClick={()=>props.dispatch({type:'add_0'})}>+</button>
-								<button className='cart_decrease'onClick={()=>props.dispatch({type:'subtract_0'})}>-</button>
+								<button className='cart_increase' onClick={()=>props.dispatch(addItem(props.state, props.state[0].id))}>+</button>
+								<button className='cart_decrease'onClick={()=>props.dispatch(addItem(props.state, props.state[0].id))}>-</button>
 							</td>
 						</tr>
 
@@ -36,8 +46,8 @@ const Cart = (props) => {
 							<td>{props.state[1].quan}</td>
 							<td>{props.state[1].price*props.state[1].quan}</td>
 							<td>
-								<button className='cart_increase' onClick={()=>props.dispatch({type:'add_1'})}>+</button>
-								<button className='cart_decrease' onClick={()=>props.dispatch({type:'subtract_1'})}>-</button>
+								<button className='cart_increase' onClick={()=>props.dispatch(addItem(props.state, props.state[1].id))}>+</button>
+								<button className='cart_decrease' onClick={()=>props.dispatch(addItem(props.state, props.state[1].id))}>-</button>
 							</td>
 						</tr>
 					</table>
