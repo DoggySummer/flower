@@ -33,6 +33,9 @@ table {
 th {
   border-bottom: solid;
 }
+.dde{
+  width: 300px;
+}
 .total {
   font-size: 3rem;
   margin: 0 auto;
