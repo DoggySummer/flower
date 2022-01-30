@@ -20,35 +20,42 @@ let defaultItems = [
   {id : 10, name : '우롱 차 ', quan : 0, price : 4000, front_Image : "/images/blog-1.jpeg", back_Image : "/images/1.png"},
   {id : 11, name : '그레이프푸르츠', quan : 0, price : 3000, front_Image : "/images/blog-1.jpeg", back_Image : "/images/1.png"}
 ]
+  const ADD = "ADD";
+  const MINUS = "MINUS";
 
 
+  const add = () => ({
+    type : ADD
+  })
+
+  const minus = () => ({
+    type : MINUS
+  })
 
 function reducer(state = defaultItems, action){
 
   // 장바구니 수량 늘리기
-	console.log(action);
-	if (action.type === "add") {
-    const copy = [...state];
-    copy[action.idx].quan++;
-		console.log(copy);
-		console.log(action.idx)
-		return copy;
-	}
-	else if(action.type === "minus"){
-		const copy = [...state];
-		copy[action.idx].quan--;
-		console.log(copy);
-		console.log(action.idx)
-		return copy;
-	}
-	else{
-		return state;
-	}
+	switch (action.type) {
+    case ADD :
+      return{
+        ...state,
+        quan: state.quan + 1,		
+    };
+    case MINUS :
+      return{
+        ...state,
+        quan: state.quan - 1,		
+    }
+    default :
+      return state;
+  }
+}
   
   // 장바구니 수량 줄이기
-}
+
 
 let store = createStore(reducer);
+console.log(store.getState());
 
 ReactDOM.render(
   <React.StrictMode>
