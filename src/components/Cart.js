@@ -44,13 +44,20 @@ const Cart = () => {
 							</div>
 						)})}
 					</div>
-{console.log(state)}
 					<div className='total'>총 금액은 
 					{
-					state.map((b,i)=>{
-						total += state[i].sum;
-						console.log(total) 
-					})
+				state[0].price*state[0].quan +
+				state[1].price*state[1].quan +
+				state[2].price*state[2].quan +
+				state[3].price*state[3].quan +
+				state[4].price*state[4].quan +
+				state[5].price*state[5].quan +
+				state[6].price*state[6].quan +
+				state[7].price*state[7].quan +
+				state[8].price*state[8].quan +
+				state[9].price*state[9].quan +
+				state[10].price*state[10].quan +
+				state[11].price*state[11].quan
 				}
 					원 입니다</div>
 				</div>
