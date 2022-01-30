@@ -26,19 +26,19 @@ const Home = () => {
           <div className='card_blend'>classic blends</div>
           <img src='./images/1.png' className='card-img' alt='about_image'></img>
           <div className='card_title'>Chamomile</div>
-          <button className='card-btn'>add to cart</button>
+          <Link to="/Menu"><button className='card-btn'>Go to menu</button></Link>
         </div>
         <div className='home_card'>
           <div className='card_blend'>classic blends</div>
           <img src='./images/2.png' className='card-img' alt='about_image'></img>
           <div className='card_title'>Rooibos</div>
-          <button className='card-btn'>add to cart</button>
+          <Link to="/Menu"><button className='card-btn'>Go to menu</button></Link>
         </div>
         <div className='home_card'>
           <div className='card_blend'>classic blend</div>
           <img src='./images/3.png' className='card-img' alt='about_image'></img>
           <div className='card_title'>Earl Grey</div>
-          <button className='card-btn'>add to cart</button>
+          <Link to="/Menu"><button className='card-btn'> Go to menu</button></Link>
         </div>
       </div>
 
