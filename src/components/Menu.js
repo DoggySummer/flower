@@ -20,7 +20,7 @@ const Menu = (props) => {
 				</div>
 				<div className='menu_description'>
 					<h3>{a.name}</h3>	
-					<div className='AddToCart' onClick={()=>props.dispatch({type: `add_`+i})}>Add to Cart</div> 
+					<div className='AddToCart'onClick={()=>props.dispatch({type: `add_`+i})}>Add to Cart</div> 
 				</div>
 			</div>)
 			})}
@@ -31,10 +31,12 @@ const Menu = (props) => {
 					
 		};
 
-		function state를props화(state){
+		function mapStateToProps(state){
 			return {
 				state : state
 			}
-		}
+		};
 		
-		export default connect(state를props화)(Menu);
+		export default connect(mapStateToProps)(Menu);
+
+		//onClick={()=>props.dispatch({type: `add_`+i})}
