@@ -20,7 +20,7 @@ const Cart = () => {
 							<div className='header-name'>상품정보</div>
 							<div className='header-quan'>수량</div>
 							<div className='header-total'>총 금액</div>
-							<div className='header-button'>수량 조절</div>
+							<div className='header-button'>수량</div>
 						</div>
 
 						{state.map((a,i)=>{

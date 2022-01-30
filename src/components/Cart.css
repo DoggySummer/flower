@@ -42,12 +42,7 @@
   width: 40%;
   text-align: center;
 }
-.header-name,
-.header-quan,
-.header-total,
-.header-button {
-  width: 15%;
-}
+
 .inner_table {
   display: flex;
   padding: 10px 0;
@@ -60,17 +55,22 @@
   display: block;
 }
 .inner_table-img img {
-  width: 60%;
+  width: 55%;
   display: block;
   margin: 0 auto;
 }
-.inner_table-name,
 .inner_table-quan,
 .inner_table-price,
-.inner_table-button {
-  width: 15%;
+.inner_table-button,
+.header-quan,
+.header-total,
+.header-button {
+  width: 10%;
 }
-
+.inner_table-name,
+.header-name {
+  width: 30%;
+}
 .total {
   font-size: 3rem;
   margin: 0 auto;
