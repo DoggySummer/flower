@@ -1,47 +1,94 @@
 import { React, useState } from 'react';
 import './Cart.css';
-import {connect} from 'react-redux';
+import {useSelector, useDispatch} from 'react-redux';
 
-const Cart = (props) => {
-
-  
+const Cart = () => {
+	let total = 0;
+	const state = useSelector(state => state);
+	const dispatch = useDispatch();
 	return (
 		<div className='background_img'>
 			<div className='cart_background_center'>
 				<h1 className='cart_title'>My Menu</h1>
+
+				{/* 테이블 시작 */}
 				<div className='cart_box'>
 					{/* 담은 메뉴 map 함수로 정렬 */}
-					<table>
-						<tr>
-							<th>이미지</th>
-							<th>상품정보</th>
-							<th>수량</th>
-							<th>총 금액</th>
-							<th>취소</th>
-						</tr>
+					<div className='cart_table'>
+						<div className='table_header'>
+							<div className='header-img'>이미지</div>
+							<div className='header-name'>상품정보</div>
+							<div className='header-quan'>수량</div>
+							<div className='header-total'>총 금액</div>
+							<div className='header-button'>수량 조절</div>
+						</div>
 
-						<tr>
-							<td><img src={props.state[0].front_Image} className='aaa'></img></td>
-							<td>{props.state[0].name}</td>
-							<td>{props.state[0].quan}</td>
-							<td>{props.state[0].price*props.state[0].quan}</td>
-							<td>
-								<button className='cart_increase' onClick={()=>props.dispatch(add)}>+</button>
-								<button className='cart_decrease'onClick={()=>props.dispatch(minus)}>-</button>
-							</td>
-						</tr>
-					</table>
-					<div className='total'>총 금액은 {props.state[0].price*props.state[0].quan + props.state[1].price*props.state[1].quan}입니다</div>
+						{state.map((a,i)=>{
+          	return (
+							<div key={i}>
+							{
+							state[i].quan > 0 &&
+							<div>
+								<div className='inner_table'>
+								<div className='inner_table-img'><img src={state[i].front_Image}></img></div>
+								<div className='inner_table-name'>{state[i].name}</div>
+								<div className='inner_table-quan'>{state[i].quan}</div>
+								<div className='inner_table-price'>{state[i].price*state[i].quan}</div>
+									<div className='inner_table-button'>
+										<button className='cart_increase' onClick={()=>dispatch({type: `add_`+i})}>+</button>
+										<button className='cart_decrease'onClick={()=>dispatch({type: `minus_`+i})} >-</button>
+									</div>
+								</div>
+							</div>
+							}
+							</div>
+						)})}
+					</div>
+{console.log(state)}
+					<div className='total'>총 금액은 
+					{
+					state.map((b,i)=>{
+						total += state[i].sum;
+						console.log(total) 
+					})
+				}
+					원 입니다</div>
 				</div>
 			</div>
 		</div>
 	);
 };
 
-function state를props화(state){
-	return {
-		state : state
-	}
-}
 
-export default connect(state를props화)(Cart);
+
+// if(props.state[i].quan > 0)
+// {
+// 	return
+// <td><img src={props.state[i].front_Image} className='aaa'></img></td>
+// <td>{props.state[i].name}</td>
+// <td>{props.state[i].quan}</td>
+// <td>{props.state[i].price*props.state[i].quan}</td>
+// </tr>;
+// }
+// else { return null;}
+// )})}
+
+
+						{/* <tr>
+							<td><img src={props.state[0].front_Image} className='aaa'></img></td>
+							<td>{props.state[0].name}</td>
+							<td>{props.state[0].quan}</td>
+							<td>{props.state[0].price*props.state[0].quan}</td>
+							<td>
+								<button className='cart_increase' onClick={()=>{props.dispatch({type: 'add_0'})}}>+</button>
+								<button className='cart_decrease'onClick={()=>{props.dispatch({type: 'minus'})}}>-</button>
+							</td>
+						</tr> */}
+// function statementff(state){
+// 	return {
+// 		state: state
+// 	}
+// }
+// 						export default connect(statementff)(Cart);
+
+export default Cart;

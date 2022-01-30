@@ -21,7 +21,7 @@ const Menu = () => {
 				</div>
 				<div className='menu_description'>
 					<h3>{state[i].name}</h3>	
-					{/* <div className='AddToCart'onClick={()=>dispatch({type: add})}>Add to Cart</div>  */}
+					<div className='AddToCart'onClick={()=>dispatch({type: `add_`+i})}>Add to Cart</div> 
 				</div>
 			</div>)
 			})}
