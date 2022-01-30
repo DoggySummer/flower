@@ -1,17 +1,18 @@
 import { React, useState } from 'react';
 import './Menu.css';
-import {useSelector} from 'react-redux';
+import {useSelector,useDispatch} from 'react-redux';
 
 
-const Menu = ([props]) => {
+const Menu = () => {
 		const state = useSelector(state => state);
+		const dispatch = useDispatch();
 		return (
 			<div className='background_img'>
 				<div className='menu_background_center'>
 					<h1 className='menu_title'>SHOP SINGAPORE'S FINEST TEA SELECTIONS</h1>
 					<div className='menu_box'>
 
-			{state.map(function(value,i){
+			{state.map((a,i) => {
 			return (
 			<div className='menu_item' key="{i}">
 				<div className='menu_img'>
@@ -19,8 +20,8 @@ const Menu = ([props]) => {
 					<img src={state[i].back_Image} className='img_back'></img>
 				</div>
 				<div className='menu_description'>
-					<h3>{value.name}</h3>	
-					<div className='AddToCart'onClick={()=>props.dispatch({type: `add_`+i})}>Add to Cart</div> 
+					<h3>{state[i].name}</h3>	
+					{/* <div className='AddToCart'onClick={()=>dispatch({type: add})}>Add to Cart</div>  */}
 				</div>
 			</div>)
 			})}
@@ -31,4 +32,5 @@ const Menu = ([props]) => {
 	};
 
 		
+	
 		export default Menu;
