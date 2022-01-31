@@ -6,6 +6,18 @@ import {useSelector,useDispatch} from 'react-redux';
 const Menu = () => {
 		const state = useSelector(state => state);
 		const dispatch = useDispatch();
+
+		const ADD = "ADD";
+		const MINUS = "MINUS";
+	
+		const add = () => ({
+			type : "ADD"
+		})
+	
+		const minus = () => ({
+			type : "MINUS"
+		})
+
 		return (
 			<div className='background_img'>
 				<div className='menu_background_center'>
@@ -21,7 +33,7 @@ const Menu = () => {
 				</div>
 				<div className='menu_description'>
 					<h3>{state[i].name}</h3>	
-					<div className='AddToCart'onClick={()=>dispatch({type: `add_`+i})}>Add to Cart</div> 
+					<div className='AddToCart'onClick={()=>dispatch(add())}>Add to Cart</div> 
 				</div>
 			</div>)
 			})}

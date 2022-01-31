@@ -3,9 +3,21 @@ import './Cart.css';
 import {useSelector, useDispatch} from 'react-redux';
 
 const Cart = () => {
-	let total = 0;
 	const state = useSelector(state => state);
 	const dispatch = useDispatch();
+
+
+	const ADD = "ADD";
+  const MINUS = "MINUS";
+
+  const add = () => ({
+    type : ADD
+  })
+
+  const minus = () => ({
+    type : MINUS
+  })
+
 	return (
 		<div className='background_img'>
 			<div className='cart_background_center'>
@@ -35,8 +47,8 @@ const Cart = () => {
 								<div className='inner_table-quan'>{state[i].quan}</div>
 								<div className='inner_table-price'>{state[i].price*state[i].quan}</div>
 									<div className='inner_table-button'>
-										<button className='cart_increase' onClick={()=>dispatch({type: `add_`+i})}>+</button>
-										<button className='cart_decrease'onClick={()=>dispatch({type: `minus_`+i})} >-</button>
+										<button className='cart_increase' onClick={()=>dispatch(({type: "ADD"}))}>+</button>
+										<button className='cart_decrease'onClick={()=>dispatch(({type: "MINUS"}))}>-</button>
 									</div>
 								</div>
 							</div>
