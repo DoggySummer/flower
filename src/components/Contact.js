@@ -5,10 +5,29 @@ import emailjs from 'emailjs-com';
 import styled from 'styled-components';
 
 
-const Form = styled.form` margin: 0 auto; padding:
- 20px; width: 400px; background: #ccc;
-  text-align: center;
- input { padding: 5px 10px; width: 100%; border: 1px solid #666; & + input, & + textarea { margin-top: 20px; } } textarea { padding: 5px 10px; width: 100%; min-height: 100px; outline: none; resize: none; IME-MODE: auto; } button { margin-top: 20px; padding: 5px 15px; background: #fff; border: 1px solid #666; outline: none; cursor: pointer; } `;
+const Form = styled.form` margin: 0 auto; 
+padding: 20px; 
+width: 400px; 
+background: #ccc;
+text-align: center;
+input { padding: 5px 10px; 
+        width: 100%; 
+        border: 1px solid #666; & + input, & + textarea { margin-top: 20px; } 
+      } 
+textarea { padding: 5px 10px; 
+           width: 100%; 
+           min-height: 100px; 
+           outline: none; 
+           resize: none; 
+           IME-MODE: auto; 
+           }
+button { margin-top: 20px; 
+         padding: 5px 15px; 
+         background: #fff; 
+         border: 1px solid #666; 
+         outline: none; 
+         cursor: pointer; 
+        } `;
 
 
 
