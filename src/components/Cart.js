@@ -6,18 +6,6 @@ const Cart = () => {
 	const state = useSelector(state => state);
 	const dispatch = useDispatch();
 
-
-	const ADD = "ADD";
-  const MINUS = "MINUS";
-
-  const add = () => ({
-    type : ADD
-  })
-
-  const minus = () => ({
-    type : MINUS
-  })
-
 	return (
 		<div className='background_img'>
 			<div className='cart_background_center'>

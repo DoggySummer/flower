@@ -1,32 +1,43 @@
 import './Contact.css';
+import { useCallback } from 'react'; 
+import useInput from './useInput'; 
+import emailjs from 'emailjs-com'; 
+import styled from 'styled-components';
+
+
+const Form = styled.form` margin: 0 auto; padding:
+ 20px; width: 400px; background: #ccc;
+  text-align: center;
+ input { padding: 5px 10px; width: 100%; border: 1px solid #666; & + input, & + textarea { margin-top: 20px; } } textarea { padding: 5px 10px; width: 100%; min-height: 100px; outline: none; resize: none; IME-MODE: auto; } button { margin-top: 20px; padding: 5px 15px; background: #fff; border: 1px solid #666; outline: none; cursor: pointer; } `;
+
 
 
 const Contact = () => {
+  const [name, onChangeName] = useInput(''); 
+  const [email, onChangeEmail] = useInput(''); 
+  const [text, onChangeText] = useInput(''); 
+  
+  const onSubmit = useCallback((e) => {
+  e.preventDefault(); 
+  const inputNum = e.target.childElementCount - 1; 
+  const data = new FormData(e.target); 
+  const entries = data.entries(); 
+  let failNum = 0; for (let i = 0; i < inputNum; i++) { 
+  const next = entries.next(); const key = next.value[0]; 
+  const value = next.value[1]; if (!value) { failNum++; alert(`${key} 비어있습니다.`); break; } } 
+  if (!failNum) { emailjs.sendForm( 'neul0129', 'neul0129', e.target, 'user_WGCq6VtvX8EjaJUa33KFA')
+  .then((result) => { alert("보내기 완료!")}, (error) => { console.log(error.text); }); } }, []);
+  
+
   return(
-    <div className='contact_bg'>
-      <div className='contact_container'>
-        <div className='contact_title'>
-          Contact Us
-        </div>
-          <div className='hello'>
-            hello there!
-          </div>
-          <div className='contact_help'>
-            how can We help you?
-          </div>
-          <div className='contact_info'>
-          Drop us a message below and we'll get back to you soon!
-          <br />
-          For Customer Service enquiries call us at +65 6909 5933
-          </div>
-        <div className='contact_input'>
-          <input type="text" className='name' placeholder='Name'></input>  
-          <input type="text" className='name' placeholder='Email'></input>  
-        </div>
-        <textarea className='textarea' placeholder='Message'></textarea>
-        <div className='send'>Send</div>
-      </div>
-    </div>
+    <>
+      <Form onSubmit={onSubmit}> 
+      <input type="text" name="name" placeholder="이름" value={name} onChange={onChangeName} /> 
+      <input type="text" name="email" placeholder="이메일" value={email} onChange={onChangeEmail} /> 
+      <textarea name="text" placeholder="메세지" value={text} onChange={onChangeText} /> 
+      <button type="submit"> 발송 </button> 
+      </Form>
+    </>
   )
 }
 export default Contact;

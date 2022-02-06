@@ -25,36 +25,47 @@ import {createStore} from 'redux';
 
   // 액션 정의
   
-  const ADD = "ADD";
-  const MINUS = "MINUS";
+  // const ADD = "ADD";
+  // const MINUS = "MINUS";
 
-  const add = () => ({
-    type : ADD
-  })
+  // const add = () => ({
+  //   type : ADD
+  // })
 
-  const minus = () => ({
-    type : MINUS
-  })
+  // const minus = () => ({
+  //   type : MINUS
+  // })
 
   // reducer 생성
 function reducer(state = defaultItems, action){
-
   // 장바구니 수량 늘리고 줄이기
-	switch (action.type) {
-    case ADD :
-      return{
-        ...state,
-        quan: state[0].quan + 1,		
-      };
-      case MINUS :
-      return{
-        ...state,
-        quan: state[0].quan - 1,		
-      };
-    default :
-      return state;
+  if(action.type === 'add'){
+    return {
+      quan : state.quan + 1,
+    };
   }
+  if(action.type === 'minus'){
+    return {
+      quan : state.quan - 1,
+    };
+  }
+  return state;
 }
+// 	switch (action.type) {
+//     case ADD :
+//       return{
+//         ...state,
+//         quan: state[0].quan + 1,		
+//       };
+//       case MINUS :
+//       return{
+//         ...state,
+//         quan: state[0].quan - 1,		
+//       };
+//     default :
+//       return state;
+//   }
+// }
 
 let store = createStore(reducer);
 console.log(store.getState());
