@@ -7,8 +7,7 @@ import styled from 'styled-components';
 
 const Form = styled.form` margin: 0 auto; 
 padding: 20px; 
-width: 400px; 
-background: #ccc;
+width: 350px; 
 text-align: center;
 input { padding: 5px 10px; 
         width: 100%; 
@@ -16,7 +15,7 @@ input { padding: 5px 10px;
       } 
 textarea { padding: 5px 10px; 
            width: 100%; 
-           min-height: 100px; 
+           min-height: 200px; 
            outline: none; 
            resize: none; 
            IME-MODE: auto; 
@@ -25,7 +24,6 @@ button { margin-top: 20px;
          padding: 5px 15px; 
          background: #fff; 
          border: 1px solid #666; 
-         outline: none; 
          cursor: pointer; 
         } `;
 
@@ -49,14 +47,17 @@ const Contact = () => {
   
 
   return(
-    <>
+    <div className='contact_bg'>
+			<div className='contact_container'>
+			<p className='contact_title'>Contact Us</p>
       <Form onSubmit={onSubmit}> 
       <input type="text" name="name" placeholder="이름" value={name} onChange={onChangeName} /> 
       <input type="text" name="email" placeholder="이메일" value={email} onChange={onChangeEmail} /> 
       <textarea name="text" placeholder="메세지" value={text} onChange={onChangeText} /> 
       <button type="submit"> 발송 </button> 
       </Form>
-    </>
+			</div>
+    </div>
   )
 }
 export default Contact;
